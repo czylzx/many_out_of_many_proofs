@@ -51,6 +51,8 @@ endif()
 
 configure_file(${PROJECT_SOURCE_DIR}/config/config.h.in ${PROJECT_SOURCE_DIR}/config/config.h @ONLY)
 
+# close warning
+add_definitions(-w)
 
 # netio
 ADD_EXECUTABLE(test_netio test/test_netio.cpp)
